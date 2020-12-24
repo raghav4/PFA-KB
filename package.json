@@ -1,11 +1,12 @@
 {
-  "name": "PFA-KB",
+  "name": "pfa-kb",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "export NODE_ENV=development && DEBUG=app:* npx nodemon"
+    "dev": "export NODE_ENV=development && DEBUG=app:* npx nodemon",
+    "lint": "npx prettier --write ./*"
   },
   "repository": {
     "type": "git",
@@ -23,7 +24,10 @@
     "debug": "^4.3.1",
     "dotenv": "^8.2.0",
     "express": "^4.17.1",
+    "express-async-errors": "^3.1.1",
+    "jsonwebtoken": "^8.5.1",
     "mongoose": "^5.11.8",
+    "morgan": "^1.10.0",
     "winston": "^3.3.3"
   },
   "devDependencies": {
