@@ -1,0 +1,35 @@
+{
+  "name": "PFA-KB",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "export NODE_ENV=development && DEBUG=app:* npx nodemon"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/raghav4/PFA-KB.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/raghav4/PFA-KB/issues"
+  },
+  "homepage": "https://github.com/raghav4/PFA-KB#readme",
+  "dependencies": {
+    "config": "^3.3.3",
+    "debug": "^4.3.1",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "mongoose": "^5.11.8",
+    "winston": "^3.3.3"
+  },
+  "devDependencies": {
+    "eslint": "^7.16.0",
+    "eslint-config-airbnb-base": "^14.2.1",
+    "eslint-plugin-import": "^2.22.1",
+    "prettier": "^2.2.1"
+  }
+}
