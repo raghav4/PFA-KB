@@ -17,7 +17,7 @@ const userSchema = new mongoose.Schema({
 // eslint-disable-next-line func-names
 userSchema.methods.generateAuthToken = function () {
   // eslint-disable-next-line no-underscore-dangle
-  return jwt.sign({ _id: this._id }, config.get('jwtPrivateKey'), {
+  return jwt.sign({ _id: this._id }, config.get('jwt.privateKey'), {
     expiresIn: config.get('jwt.expiration'),
   });
 };
