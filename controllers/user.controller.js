@@ -1,8 +1,7 @@
 const bcrypt = require('bcryptjs');
 const { User } = require('../models');
-const { tryCatch } = require('../middlewares');
 
-exports.signUp = tryCatch(async (req, res) => {
+exports.signUp = async (req, res) => {
   const { username, password } = req.body;
   let user = await User.findOne({ username });
   if (user) return res.status(400).send('Username already registered');
@@ -13,9 +12,9 @@ exports.signUp = tryCatch(async (req, res) => {
 
   await user.save();
   return res.status(201).send('Account Created!');
-});
+};
 
-exports.logIn = tryCatch(async (req, res) => {
+exports.logIn = async (req, res) => {
   const { username, password } = req.body;
   const user = await User.findOne({ username });
   if (!user) return res.status(400).send('Invalid Username or Password');
@@ -25,4 +24,4 @@ exports.logIn = tryCatch(async (req, res) => {
 
   const jwtToken = user.generateAuthToken();
   return res.header('x-auth-token', jwtToken).send('Login Successful!');
-});
+};
