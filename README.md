@@ -2,6 +2,8 @@
 
 [![Run in Postman](https://run.pstmn.io/button.svg)](https://documenter.getpostman.com/view/6857431/TVsxB6B2)
 
+> **Deployed on Heroku** - https://desolate-meadow-17443.herokuapp.com/ , endpoints are in the postman collection!
+
 ## Run using docker
 
 ```bash
