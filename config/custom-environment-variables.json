@@ -1,0 +1,7 @@
+{
+  "DB_URI": "MONGO_DB_URI",
+  "jwt": {
+    "privateKey": "jwtPrivateKey",
+    "expiration": "jwtExpiration"
+  }
+}

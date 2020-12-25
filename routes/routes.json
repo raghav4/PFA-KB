@@ -1,0 +1,16 @@
+{
+  "main": {
+    "post": "/api/post",
+    "user": "/api/user"
+  },
+  "post": {
+    "create": "/new",
+    "getTotalViews": "/views/:id",
+    "totalViewers": "/viewers/:id",
+    "addView": "/view/:id"
+  },
+  "user": {
+    "signUp": "/signup",
+    "logIn": "/login"
+  }
+}

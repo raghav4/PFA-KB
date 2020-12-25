@@ -1,0 +1,46 @@
+{
+  "name": "pfa-kb",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "export NODE_ENV=development && DEBUG=app:* npx nodemon",
+    "prod": "export NODE_ENV=production && DEBUG=app:* npx nodemon",
+    "lint": "npx prettier --write ./*",
+    "pm2_cluster": "pm2 start index.js -i max",
+    "pm2_fork": "pm2 start index.js",
+    "start": "export NODE_ENV=proudction && npx nodemon index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/raghav4/PFA-KB.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/raghav4/PFA-KB/issues"
+  },
+  "homepage": "https://github.com/raghav4/PFA-KB#readme",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "body-parser": "^1.19.0",
+    "config": "^3.3.3",
+    "debug": "^4.3.1",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "express-async-errors": "^3.1.1",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^5.11.8",
+    "morgan": "^1.10.0",
+    "winston": "^3.3.3"
+  },
+  "devDependencies": {
+    "0x": "^4.10.2",
+    "eslint": "^7.16.0",
+    "eslint-config-airbnb-base": "^14.2.1",
+    "eslint-plugin-import": "^2.22.1",
+    "prettier": "^2.2.1"
+  }
+}
