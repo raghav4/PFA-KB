@@ -5,9 +5,7 @@ const { postController } = require('../../controllers');
 
 const router = express.Router();
 
-router.get(post.getTotalViews, auth, postController.getTotalViews);
-
-router.get(post.totalViewers, auth, postController.getViewers);
+router.get(post.getTotalViews, postController.getTotalViews);
 
 router.post(post.create, auth, postController.createPost);
 

@@ -10,7 +10,7 @@
     "lint": "npx prettier --write ./*",
     "pm2_cluster": "pm2 start index.js -i max",
     "pm2_fork": "pm2 start index.js",
-    "start": "export NODE_ENV=proudction && DEBUG=app* npx nodemon"
+    "start": "export NODE_ENV=production && DEBUG=app* npx nodemon"
   },
   "repository": {
     "type": "git",

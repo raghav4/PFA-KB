@@ -4,10 +4,9 @@
     "user": "/api/user"
   },
   "post": {
-    "create": "/new",
     "getTotalViews": "/views/:id",
-    "totalViewers": "/viewers/:id",
-    "addView": "/view/:id"
+    "addView": "/view/:id",
+    "create": "/new"
   },
   "user": {
     "signUp": "/signup",
