@@ -21,6 +21,11 @@ const getPostViewers = async (postId) => {
   }));
 };
 
+exports.getAllPosts = async (req, res) => {
+  const posts = await Post.find({});
+  return res.status(200).send(posts);
+};
+
 exports.createPost = async (req, res) => {
   const post = new Post({ createdBy: req.user._id, content: req.body.content });
   await post.save();

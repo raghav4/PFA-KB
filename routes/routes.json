@@ -6,7 +6,8 @@
   "post": {
     "getTotalViews": "/views/:id",
     "addView": "/view/:id",
-    "create": "/new"
+    "create": "/new",
+    "getAll": "/all"
   },
   "user": {
     "signUp": "/signup",

@@ -7,5 +7,5 @@ module.exports = (app) => {
   app.use(bodyParser.json());
   app.use(main.user, userRoutes);
   app.use(main.post, postRoutes);
-  // app.use(error);
+  app.use(error);
 };
