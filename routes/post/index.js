@@ -7,6 +7,8 @@ const router = express.Router();
 
 router.get(post.getTotalViews, postController.getTotalViews);
 
+router.get(post.getAll, postController.getAllPosts);
+
 router.post(post.create, auth, postController.createPost);
 
 router.post(post.addView, auth, postController.registerView);

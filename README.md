@@ -1,6 +1,13 @@
 # PFA-KB
 
-[![Run in Postman](https://run.pstmn.io/button.svg)](https://app.getpostman.com/run-collection/47d7c3ec1ddee3da5075)
+[![Run in Postman](https://run.pstmn.io/button.svg)](https://documenter.getpostman.com/view/6857431/TVsxB6B2)
+
+## Run using docker
+
+```bash
+docker pull raghav2/pfakb
+docker run -p 3000:3000 raghav2/pfakb
+```
 
 ## Which database used and why?
 
@@ -32,5 +39,5 @@ npm run pm2_cluster
 
 ![Siege Load Testing](https://i.imgur.com/1DQOBY4.png)
 
-Using `pm2 cluster mode - Load Balancer`
+Using `pm2 cluster mode - with Load Balancer`
 ![pm2 load balancer cluster mode](https://i.imgur.com/31NLTBr.png)
